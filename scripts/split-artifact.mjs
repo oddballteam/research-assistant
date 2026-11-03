@@ -4,7 +4,7 @@
 // Run it once to create public/, or again on a fresh artifact export. It overwrites
 // index.html, styles.css and app.js, and re-applies the patches. If the artifact changed
 // enough that a patch no longer matches, the script stops and names the patch.
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const src = resolve(process.argv[2] ?? 'source/research-assistant.artifact.html');
@@ -84,6 +84,13 @@ ${markup}
 </body>
 </html>
 `;
+
+// public/app.js now carries the goal-alignment check, which the artifact does not have.
+// Re-splitting would erase it, so refuse unless the caller says so.
+const existing = resolve(out, 'app.js');
+if (existsSync(existing) && readFileSync(existing, 'utf8').includes('/* alignment:') && !process.argv.includes('--force')) {
+  throw new Error('public/app.js has the goal-alignment check, which the artifact does not. Re-splitting would remove it. Re-run with --force to overwrite, then re-add the alignment block.');
+}
 
 mkdirSync(out, { recursive: true });
 writeFileSync(resolve(out, 'index.html'), page);

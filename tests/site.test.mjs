@@ -55,3 +55,11 @@ test('no key-shaped strings anywhere in the repo', () => {
   const re = /sk-ant-[A-Za-z0-9_-]{10,}|sk-[A-Za-z0-9]{32,}|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|xox[baprs]-[A-Za-z0-9-]{10,}/;
   for (const f of textFiles()) assert.doesNotMatch(read(f.slice(root.length + 1)), re, f);
 });
+
+test('goal-alignment check is present and the split script will not silently erase it', () => {
+  const app = read('public/app.js');
+  assert.ok(app.includes('/* alignment:') && app.includes('/* end alignment */'));
+  assert.ok(app.includes('alignPanel()') && app.includes('alignMd()'));
+  const split = read('scripts/split-artifact.mjs');
+  assert.ok(split.includes('--force') && split.includes('/* alignment:'));
+});

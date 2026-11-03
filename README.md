@@ -13,7 +13,8 @@ What a demo should let someone see:
 1. **Know first.** Search a topic and see questions asked before, participant quotes, findings and the study each came from, each with a source link. Nothing is summarized without a source.
 2. **Catch repeats.** Paste draft questions and see which ones overlap with earlier ones, with the wording match shown.
 3. **Carry evidence forward.** Pin items; the pins travel with their citation into the plan, guide, findings and report.
-4. **Follow the standard flow.** Plan, guide, early findings, final report, then the repository intake step, each drafted from templates and exportable as Markdown.
+4. **Check alignment.** Link each guide question to a plan goal (or mark it a warm-up). A panel shows which goals no question tests and which questions serve none, and the exported guide includes the same summary. This is the one feature added after the artifact.
+5. **Follow the standard flow.** Plan, guide, early findings, final report, then the repository intake step, each drafted from templates and exportable as Markdown.
 
 Deliberately out of scope for the POC: real research data (sample only), accounts or shared drafts, any model-generated text, integration with the Component Prototype Builder, and a refresh pipeline for the index. Those are the next questions if the concept holds up.
 
@@ -23,7 +24,7 @@ This section is drafted from the goals you described for the tool. Edit it so it
 public/               the app (served as-is)
   index.html          markup
   styles.css          styles
-  app.js              the Research Assistant, unchanged from the artifact except four small patches
+  app.js              the Research Assistant: the artifact plus four small patches and the goal-alignment check
   claude-shim.js      stands in for Claude's artifact runtime (saving a file)
   data/
     sample/           the FICTIONAL sample data the app loads (committed)
@@ -77,7 +78,7 @@ The deployment shows the sample data and nothing else.
 
 ## Changing the app
 
-`public/` is edited directly. To pull in a newer version of the artifact instead, replace `source/research-assistant.artifact.html` and run `npm run split`; that overwrites `index.html`, `styles.css` and `app.js` and re-applies the patches. The four patches are listed in `scripts/split-artifact.mjs`: they point the app at `data/sample/`, add the sample-data markers, and replace the refresh text.
+`public/` is edited directly, and `app.js` now differs from the artifact (the goal-alignment check, between the `/* alignment:` and `/* end alignment */` markers). `npm run split` refuses to run while that block is present; pass `-- --force` to overwrite it and re-add the block by hand. To pull in a newer version of the artifact, replace `source/research-assistant.artifact.html` and run the split; that overwrites `index.html`, `styles.css` and `app.js` and re-applies the patches. The four patches are listed in `scripts/split-artifact.mjs`: they point the app at `data/sample/`, add the sample-data markers, and replace the refresh text.
 
 To change the sample data, edit `scripts/make-sample-data.mjs` and run `npm run sample`. The generator builds each document from blocks so that quoted line numbers match the text.
 

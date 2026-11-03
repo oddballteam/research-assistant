@@ -642,21 +642,65 @@ function renderGuide(){
     if(!s.qs.length)h+='<div class="empty">No questions in this section yet.</div>';
     s.qs.forEach(function(q,qi){
       var base='guide.sections.'+si+'.qs.'+qi;var key=s.id+'|'+q.id;
-      h+='<div class="field"><div class="listrow"><div><textarea id="gq_'+q.id+'" data-path="'+base+'.text" data-ov="gov_'+q.id+'" data-gq="'+esc(key)+'" style="min-height:64px" aria-label="Question '+(qi+1)+' in '+esc(s.title)+'">'+esc(q.text)+'</textarea>'+(q.from?'<div class="hint">Reused from a prior study. Source: <a href="'+esc(q.from.link)+'" target="_blank" rel="noopener">'+esc(q.from.file)+' · L'+esc(q.from.line)+'</a>, '+esc(q.from.study)+'</div>':'')+'<div id="gov_'+q.id+'"></div></div><button class="btn sm quiet" data-act="g-delq" data-si="'+si+'" data-qi="'+qi+'">Remove</button></div></div>';
+      h+='<div class="field"><div class="listrow"><div><textarea id="gq_'+q.id+'" data-path="'+base+'.text" data-ov="gov_'+q.id+'" data-gq="'+esc(key)+'" style="min-height:64px" aria-label="Question '+(qi+1)+' in '+esc(s.title)+'">'+esc(q.text)+'</textarea>'+(q.from?'<div class="hint">Reused from a prior study. Source: <a href="'+esc(q.from.link)+'" target="_blank" rel="noopener">'+esc(q.from.file)+' · L'+esc(q.from.line)+'</a>, '+esc(q.from.study)+'</div>':'')+alignSelect(q,base+'.goal')+'<div id="gov_'+q.id+'"></div></div><button class="btn sm quiet" data-act="g-delq" data-si="'+si+'" data-qi="'+qi+'">Remove</button></div></div>';
     });
     h+='<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" data-act="g-addq" data-si="'+si+'">Add question</button><button class="btn quiet" data-act="g-delsec" data-si="'+si+'">Remove this section</button></div></div>';
     h+='<div class="stepnav">'+(gs>0?'<button class="btn quiet" data-act="g-go" data-i="'+(gs-1)+'">Back: '+esc(secs[gs-1].title)+'</button>':'<span></span>')+(gs<n-1?'<button class="btn" data-act="g-go" data-i="'+(gs+1)+'">Next: '+esc(secs[gs+1].title)+'</button>':'<button class="btn" data-act="g-check">Check all questions</button>')+'</div>';
   }
-  h+='</section>'+bp('guide')+
+  h+='</section>'+bp('guide')+alignPanel()+
   '<section class="panel"><h2>Guide as Markdown</h2><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px"><button class="btn" data-act="dl" data-what="guide">Download .md</button><button class="btn ghost" data-act="cp" data-what="guide">Copy</button><button class="btn quiet" data-act="g-check">Check all questions</button></div><pre class="md" id="guideMd"></pre></section>';
   return h;
 }
+/* alignment: link each guide question to a plan goal and show which goals no question tests.
+   Added for the proof of concept; the original artifact does not have this. Keep the markers: tests read this block. */
+var NOGOAL='none';
+function trunc(s,n){s=String(s||'').replace(/\s+/g,' ').trim();return s.length>n?s.slice(0,n-1)+'…':s}
+function alignGoals(){var out=[];['goal1','goal2','goal3'].forEach(function(k,i){var t=(S.plan[k]||'').trim();if(t)out.push({key:k,label:'Goal '+(i+1),text:t})});return out}
+function alignName(key){if(key===NOGOAL)return 'no goal (warm-up or logistics)';var g=alignGoals().filter(function(x){return x.key===key})[0];return g?g.label+': '+trunc(g.text,90):''}
+function alignScan(){
+  var goals=alignGoals(),by={},unl=[],none=[],total=0;
+  goals.forEach(function(g){by[g.key]=[]});
+  S.guide.sections.forEach(function(s){var n=0;s.qs.forEach(function(q){
+    if(!q.text.trim())return;n++;total++;
+    var ref={sec:s.title,n:n,text:q.text.trim()};
+    if(q.goal===NOGOAL)none.push(ref);else if(q.goal&&by[q.goal])by[q.goal].push(ref);else unl.push(ref)})});
+  return {goals:goals,by:by,unl:unl,none:none,total:total};
+}
+function alignSelect(q,path){
+  var goals=alignGoals();
+  if(!goals.length)return '<div class="hint">Add a research goal in the plan to link this question to it.</div>';
+  var cur=q.goal||'';
+  var opts='<option value=""'+(cur===''?' selected':'')+'>Choose the goal this serves</option>'+goals.map(function(g){return '<option value="'+g.key+'"'+(cur===g.key?' selected':'')+'>'+esc(g.label+': '+trunc(g.text,80))+'</option>'}).join('')+'<option value="'+NOGOAL+'"'+(cur===NOGOAL?' selected':'')+'>No goal: warm-up or logistics</option>';
+  return '<div class="field" style="margin:8px 0 0"><label for="ga_'+q.id+'">Serves</label><select id="ga_'+q.id+'" data-path="'+esc(path)+'">'+opts+'</select></div>';
+}
+function alignPanel(){
+  var a=alignScan();
+  if(!a.total)return '';
+  var h='<section class="panel" id="alignPanel"><h2>Alignment to your plan goals</h2><p class="lead">Every question should serve a goal from your plan, or say it is a warm-up. A goal that no question tests is a gap in the guide.</p>';
+  if(!a.goals.length)return h+'<div class="notice warn">Your plan has no research goals yet, so nothing can be linked. <button class="linkbtn" data-act="tab" data-tab="plan">Go to the plan</button></div></section>';
+  h+='<div class="inset"><ul class="cells">'+a.goals.map(function(g){var l=a.by[g.key];
+    return '<li><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap"><div><b>'+esc(g.label)+'</b> · '+esc(g.text)+'</div><span class="chip '+(l.length?'good':'warn')+'">'+(l.length?l.length+' question'+(l.length===1?'':'s'):'No question tests this goal')+'</span></div>'+(l.length?'<div class="hint">'+l.map(function(r){return esc(r.sec)+' · '+r.n}).join(', ')+'</div>':'')+'</li>'}).join('')+'</ul></div>';
+  if(a.unl.length)h+='<div class="notice warn" style="margin-top:14px"><b>'+a.unl.length+' question'+(a.unl.length===1?' is':'s are')+' not linked to a goal yet.</b> Link each one, or mark it as a warm-up.<ul class="sumlist sub">'+a.unl.map(function(r){return '<li>'+esc(r.sec)+' · '+r.n+': '+esc(trunc(r.text,110))+'</li>'}).join('')+'</ul></div>';
+  if(a.none.length)h+='<div class="hint" style="margin-top:12px">'+a.none.length+' question'+(a.none.length===1?'':'s')+' marked as warm-up or logistics, on purpose.</div>';
+  return h+'</section>';
+}
+function alignMd(){
+  var a=alignScan();if(!a.total||!a.goals.length)return '';
+  var ref=function(l){return l.map(function(r){return r.sec+', question '+r.n}).join('; ')};
+  var o='## Alignment to the plan\n\n';
+  a.goals.forEach(function(g){var l=a.by[g.key];o+='- **'+g.label+':** '+g.text+'\n  - '+(l.length?ref(l):'NO GUIDE QUESTION TESTS THIS GOAL')+'\n'});
+  if(a.none.length)o+='- **Warm-up or logistics (no goal):** '+ref(a.none)+'\n';
+  if(a.unl.length)o+='- **'+NEED+' Not linked to a goal yet:** '+ref(a.unl)+'\n';
+  return o+'\n';
+}
+/* end alignment */
+
 function guideMd(){
   var t=(S.plan.title||'').trim();
   var o='# Conversation Guide'+(t?' — '+t:'')+'\n\n';
   if(!S.guide.sections.length)o+=NEED+' (no sections added)\n';
-  S.guide.sections.forEach(function(s){o+='## '+s.title+'\n\n';var n=0;s.qs.forEach(function(q){if(!q.text.trim())return;n++;o+=n+'. '+q.text.trim()+(q.from?'  \n   _Reused from '+q.from.study+', '+q.from.file+' L'+q.from.line+' <'+q.from.link+'>_':'')+'\n'});o+='\n'});
-  return o+priorSection();
+  S.guide.sections.forEach(function(s){o+='## '+s.title+'\n\n';var n=0;s.qs.forEach(function(q){if(!q.text.trim())return;n++;o+=n+'. '+q.text.trim()+(q.from?'  \n   _Reused from '+q.from.study+', '+q.from.file+' L'+q.from.line+' <'+q.from.link+'>_':'')+(q.goal?'  \n   _Serves: '+(alignName(q.goal)||'a goal that is no longer in the plan')+'_':'')+'\n'});o+='\n'});
+  return o+alignMd()+priorSection();
 }
 
 /* ---------- tab: early findings ---------- */
