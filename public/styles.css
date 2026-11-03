@@ -316,6 +316,19 @@ details.why[open]>.hint{margin-top:4px}
 /* Footer, dock */
 .foot{max-width:1280px;margin:0 auto;padding:0 var(--gut) 132px}
 .foot .idx{font-size:12.5px;color:var(--secondary);margin-top:0}
+/* Footer: how this tool works */
+.how{scroll-margin-top:72px;margin:8px 0 16px;border-radius:var(--r-card);background:var(--card);box-shadow:var(--shadow)}
+.how:focus{outline:none}
+.how-h{margin:0;font-size:17px;font-weight:600}
+.how-btn{all:unset;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:52px;padding:12px 20px;cursor:pointer;border-radius:var(--r-card);font:inherit;font-weight:600;color:var(--label)}
+.how-btn:focus-visible{outline:3px solid color-mix(in srgb,var(--tint) 55%,transparent);outline-offset:2px}
+.how-chev{width:9px;height:9px;border-right:2px solid var(--tint);border-bottom:2px solid var(--tint);transform:rotate(45deg) translateY(-2px);transition:transform .15s}
+.how-btn[aria-expanded="true"] .how-chev{transform:rotate(-135deg)}
+.how-panel{padding:0 20px 20px;display:grid;gap:12px;max-width:72ch}
+.how-for{margin:0;font-size:15px;color:var(--secondary)}
+.how-steps{margin:0;padding-left:22px;display:grid;gap:10px;font-size:16px;line-height:1.45}
+.how-note{margin:0;font-size:14px;color:var(--secondary)}
+@media (prefers-reduced-motion:reduce){.how-chev{transition:none}}
 .dock{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;gap:4px;background:var(--bar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding:5px;border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.16);z-index:30;max-width:calc(100% - 32px)}
 .dock:empty{display:none}
 .dock .pill{border:0;background:transparent;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;color:var(--label);cursor:pointer;min-height:42px;white-space:nowrap}

@@ -21,7 +21,29 @@
   <div class="grid">
     <main id="main" class="bench"><div class="loading"><span class="spin" aria-hidden="true"></span>Loading the research index (about 10 MB)…</div></main>
   </div>
-  <footer class="foot"><div class="idx" id="idxbar" aria-live="polite">Loading index…</div></footer>
+  <footer class="foot">
+    <section class="how" id="how-it-works" aria-labelledby="how-h" tabindex="-1">
+      <h2 id="how-h" class="how-h">
+        <button type="button" class="how-btn" id="how-btn" aria-expanded="false" aria-controls="how-panel">
+          <span>How this tool works</span><span class="how-chev" aria-hidden="true"></span>
+        </button>
+      </h2>
+      <div class="how-panel" id="how-panel" role="region" aria-labelledby="how-h" hidden>
+        <p class="how-for">For Designers and Researchers. You don&rsquo;t need to write code.</p>
+        <ol class="how-steps">
+          <li><strong>Start with what we already know.</strong> On <em>Know</em>, search your topic. You see questions asked before, participant quotes and findings, each with the study it came from and a source link.</li>
+          <li><strong>Check your draft questions for repeats.</strong> Paste them in and see which ones overlap with earlier questions, with the matching wording shown.</li>
+          <li><strong>Pin what&rsquo;s useful.</strong> Pinned items keep their citation as they travel with you into the plan, guide, findings and report. Open <em>Evidence</em> at the top to review them.</li>
+          <li><strong>Work through the steps.</strong> Use <em>Plan</em>, <em>Guide</em>, <em>Findings</em> and <em>Report</em> in order. Each one starts from a template.</li>
+          <li><strong>Link guide questions to plan goals.</strong> On <em>Guide</em>, connect each question to a goal, or mark it a warm-up. A panel shows goals no question tests and questions that serve no goal.</li>
+          <li><strong>Add the study to the repository.</strong> <em>Register</em> is the last step. It prepares the study with its issue labels.</li>
+          <li><strong>Download or copy your work.</strong> Each step can be downloaded or copied as Markdown.</li>
+        </ol>
+        <p class="how-note">This is a proof of concept. It does not write text for you, and the data you see is fictional sample data. Your drafts are saved only in this browser on this device. Nobody else can see them, so download or copy anything you need to share.</p>
+      </div>
+    </section>
+    <div class="idx" id="idxbar" aria-live="polite">Loading index…</div>
+  </footer>
 </div>
 <div id="scrim" hidden></div>
 <aside class="aside" id="aside" aria-label="Your notes: open questions and evidence"></aside>
@@ -29,5 +51,6 @@
 <div class="toast" id="toast" role="status" hidden></div>
 <script src="claude-shim.js"></script>
 <script src="app.js"></script>
+<script src="how-it-works.js"></script>
 </body>
 </html>
