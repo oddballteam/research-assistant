@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Research Assistant</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar" aria-label="Research Assistant">
+  <div class="in">
+    <span class="nav-title">Research</span>
+    <div class="rail" role="tablist" aria-label="Steps" id="tabs"></div>
+    <button class="evbtn" id="evbtn" data-act="sheet" aria-label="Open evidence and questions">Evidence <b id="evn">0</b></button>
+    <span class="source" id="src"><i aria-hidden="true"></i><span>Loading index…</span></span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="grid">
+    <main id="main" class="bench"><div class="loading"><span class="spin" aria-hidden="true"></span>Loading the research index (about 10 MB)…</div></main>
+  </div>
+  <footer class="foot"><div class="idx" id="idxbar" aria-live="polite">Loading index…</div></footer>
+</div>
+<div id="scrim" hidden></div>
+<aside class="aside" id="aside" aria-label="Your notes: open questions and evidence"></aside>
+<div class="dock" id="dock"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="claude-shim.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

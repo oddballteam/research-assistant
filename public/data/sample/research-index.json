@@ -1,0 +1,1593 @@
+{
+ "repo": {
+  "remote": "https://example.com/sample-research-repo",
+  "branch": "main",
+  "commit": "5a3b1e0000000000000000000000000000c0ffee",
+  "commitDate": "2026-11-02T08:15:00-05:00",
+  "commitSubject": "Sample data refresh (fictional)",
+  "builtAt": "2026-11-02T12:00:00+00:00"
+ },
+ "board": {
+  "projectUrl": "https://example.com/sample-research-repo/projects/1",
+  "projectTitle": "SAMPLE Research Repository (fictional)",
+  "lastRefresh": "2026-11-02T03:00:00.000Z",
+  "snapshotCommit": "5a3b1e0",
+  "counts": {
+   "Proposed": 1,
+   "Current": 1,
+   "Completed": 4,
+   "Unknown": 0
+  },
+  "studies": [
+   {
+    "number": 9001,
+    "title": "2025-03 Sample Portal Appointment Reminders Usability Testing",
+    "url": "https://example.com/sample-research-repo/issues/9001",
+    "status": "Completed",
+    "team": "Sample Team A",
+    "product": "sample-portal",
+    "subProduct": null,
+    "researchType": "Usability Testing",
+    "startDate": "2025-03-04",
+    "completedDate": "2025-03-28",
+    "titleDate": "2025-03-01",
+    "summary": "A moderated usability study of a redesigned reminder settings page. Most participants wanted text messages first, did not trust reminders that omitted the clinic name, and rarely found the settings page without help.",
+    "keyFindings": [
+     "Most participants wanted reminders by text message first, then email.",
+     "Participants did not trust a reminder that did not name the clinic.",
+     "Only two of eight participants found the reminder settings without help."
+    ],
+    "researchFolderUrl": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability"
+   },
+   {
+    "number": 9002,
+    "title": "2025-06 Sample Portal Notification Preferences Discovery",
+    "url": "https://example.com/sample-research-repo/issues/9002",
+    "status": "Completed",
+    "team": "Sample Team A",
+    "product": "sample-portal",
+    "subProduct": null,
+    "researchType": "Generative (Discovery), Interviews",
+    "startDate": "2025-06-02",
+    "completedDate": "2025-07-18",
+    "titleDate": "2025-06-01",
+    "summary": "Discovery interviews about how people choose notification settings. Participants set preferences once and forget them, treat changes to a date or a payment as essential, and switch everything off when alerts pile up.",
+    "keyFindings": [
+     "Participants treated notification settings as set once and forget.",
+     "Essential meant anything that changes a date or a payment.",
+     "Too many alerts led participants to switch everything off."
+    ],
+    "researchFolderUrl": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery"
+   },
+   {
+    "number": 9003,
+    "title": "2025-09 Sample Mobile App Sign-in Help Interviews",
+    "url": "https://example.com/sample-research-repo/issues/9003",
+    "status": "Completed",
+    "team": "Sample Team C",
+    "product": "sample-mobile",
+    "subProduct": null,
+    "researchType": "Interviews, Remote",
+    "startDate": "2025-09-08",
+    "completedDate": "2025-10-24",
+    "titleDate": "2025-09-01",
+    "summary": "Remote interviews about choosing a sign-in option on the mobile app. Participants hesitated at the list of options and read help text only after a failed attempt.",
+    "keyFindings": [
+     "Participants were unsure which sign-in option to choose.",
+     "Help text was read only after a failed attempt."
+    ],
+    "researchFolderUrl": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews"
+   },
+   {
+    "number": 9004,
+    "title": "2026-01 Sample Portal Document Upload Usability Testing",
+    "url": "https://example.com/sample-research-repo/issues/9004",
+    "status": "Completed",
+    "team": "Sample Team B",
+    "product": "sample-portal",
+    "subProduct": null,
+    "researchType": "Remote, Usability Testing",
+    "startDate": "2026-01-12",
+    "completedDate": "2026-02-20",
+    "titleDate": "2026-01-01",
+    "summary": "A usability study of a new upload confirmation step. Participants wanted an immediate confirmation that repeated the file name, and a progress bar with no result left them unsure the upload finished.",
+    "keyFindings": [
+     "Participants expected an immediate confirmation with the file name.",
+     "A progress bar without a result made participants unsure the upload finished.",
+     "Confirmation emails were wanted, but not for every upload."
+    ],
+    "researchFolderUrl": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability"
+   },
+   {
+    "number": 9005,
+    "title": "2026-04 Sample Portal Caregiver Account Linking Discovery",
+    "url": "https://example.com/sample-research-repo/issues/9005",
+    "status": "Current",
+    "team": "Sample Team C",
+    "product": "sample-portal",
+    "subProduct": null,
+    "researchType": "Generative (Discovery), Interviews",
+    "startDate": "2026-05-04",
+    "completedDate": null,
+    "titleDate": "2026-04-01",
+    "summary": "Discovery interviews with caregivers about how they expect to be linked to the person they support. Sessions are in progress.",
+    "keyFindings": null,
+    "researchFolderUrl": "https://example.com/sample-research-repo/blob/main/studies/2026-04-caregiver-account-linking-discovery"
+   },
+   {
+    "number": 9006,
+    "title": "2026-07 Sample Mobile App Accessibility Check",
+    "url": "https://example.com/sample-research-repo/issues/9006",
+    "status": "Proposed",
+    "team": "Sample Team C",
+    "product": "sample-mobile",
+    "subProduct": null,
+    "researchType": "Usability Testing",
+    "startDate": null,
+    "completedDate": null,
+    "titleDate": "2026-07-01",
+    "summary": "A proposed accessibility check of the mobile app with screen reader and magnifier users. No sessions have run.",
+    "keyFindings": null,
+    "researchFolderUrl": null
+   }
+  ]
+ },
+ "documents": [
+  {
+   "path": "studies/2025-03-appointment-reminders-usability/research-plan.md",
+   "folder": "studies/2025-03-appointment-reminders-usability",
+   "file": "research-plan.md",
+   "type": "plan",
+   "title": "Appointment Reminders Research Plan",
+   "frontmatter": {
+    "product": "Sample Portal Appointment Reminders",
+    "team": "Sample Team A"
+   },
+   "tags": [
+    "usability-testing",
+    "remote"
+   ],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 25,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-plan.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Appointment Reminders Research Plan"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Background"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Research Goals"
+    },
+    {
+     "line": 12,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 18,
+     "level": 2,
+     "text": "Methodology"
+    },
+    {
+     "line": 22,
+     "level": 2,
+     "text": "Recruitment"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "How do participants decide whether to turn appointment reminders on or off?",
+     "line": 14,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-plan.md#L14"
+    },
+    {
+     "text": "What do participants expect a reminder to say, and when do they expect to receive it?",
+     "line": 15,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-plan.md#L15"
+    },
+    {
+     "text": "Where do participants look first to change how they are reminded?",
+     "line": 16,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-plan.md#L16"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Appointment Reminders Research Plan",
+    "",
+    "## Background",
+    "",
+    "Sample Portal sends appointment reminders, but people can only change them from a page that is hard to find. This study tests a redesigned reminder settings page.",
+    "",
+    "## Research Goals",
+    "",
+    "- Learn whether participants can find and change their reminder settings.",
+    "- Learn what a reminder needs to say for participants to trust it.",
+    "",
+    "## Research Questions",
+    "",
+    "- How do participants decide whether to turn appointment reminders on or off?",
+    "- What do participants expect a reminder to say, and when do they expect to receive it?",
+    "- Where do participants look first to change how they are reminded?",
+    "",
+    "## Methodology",
+    "",
+    "Moderated remote usability sessions, 45 minutes each, with a clickable prototype.",
+    "",
+    "## Recruitment",
+    "",
+    "Eight participants. Mix of desktop and phone users; at least two who use a screen reader.",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-03-appointment-reminders-usability/conversation-guide.md",
+   "folder": "studies/2025-03-appointment-reminders-usability",
+   "file": "conversation-guide.md",
+   "type": "guide",
+   "title": "Appointment Reminders Conversation Guide",
+   "frontmatter": {},
+   "tags": [
+    "usability-testing"
+   ],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 25,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Conversation Guide"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Moderator logistics"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Intro - 5 minutes"
+    },
+    {
+     "line": 11,
+     "level": 2,
+     "text": "Warm-up Questions - 5 minutes"
+    },
+    {
+     "line": 16,
+     "level": 2,
+     "text": "First Task: Find reminder settings - 20 minutes"
+    },
+    {
+     "line": 22,
+     "level": 2,
+     "text": "Thank-you and Closing - 5 minutes"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "Tell me about the last time you missed or nearly missed an appointment.",
+     "line": 13,
+     "section": "Warm-up Questions - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md#L13"
+    },
+    {
+     "text": "How do you usually keep track of your appointments?",
+     "line": 14,
+     "section": "Warm-up Questions - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md#L14"
+    },
+    {
+     "text": "Where would you go to change how you are reminded about an appointment?",
+     "line": 18,
+     "section": "First Task: Find reminder settings - 20 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md#L18"
+    },
+    {
+     "text": "What do you expect to see on this page?",
+     "line": 19,
+     "section": "First Task: Find reminder settings - 20 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md#L19"
+    },
+    {
+     "text": "How would you turn off reminders for one appointment only?",
+     "line": 20,
+     "section": "First Task: Find reminder settings - 20 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md#L20"
+    },
+    {
+     "text": "Is there anything you expected to see that was not there?",
+     "line": 24,
+     "section": "Thank-you and Closing - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/conversation-guide.md#L24"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Conversation Guide",
+    "",
+    "## Moderator logistics",
+    "",
+    "Share the prototype link in chat. Ask for consent to record before starting.",
+    "",
+    "## Intro - 5 minutes",
+    "",
+    "Explain that we are testing the page, not the participant. There are no wrong answers.",
+    "",
+    "## Warm-up Questions - 5 minutes",
+    "",
+    "- Tell me about the last time you missed or nearly missed an appointment.",
+    "- How do you usually keep track of your appointments?",
+    "",
+    "## First Task: Find reminder settings - 20 minutes",
+    "",
+    "- Where would you go to change how you are reminded about an appointment?",
+    "- What do you expect to see on this page?",
+    "- How would you turn off reminders for one appointment only?",
+    "",
+    "## Thank-you and Closing - 5 minutes",
+    "",
+    "- Is there anything you expected to see that was not there?",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-03-appointment-reminders-usability/screener.md",
+   "folder": "studies/2025-03-appointment-reminders-usability",
+   "file": "screener.md",
+   "type": "screener",
+   "title": "Appointment Reminders Screener",
+   "frontmatter": {},
+   "tags": [],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 8,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/screener.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Screener"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Questions"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "Do you have an appointment scheduled in the next three months?",
+     "line": 5,
+     "section": "Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/screener.md#L5"
+    },
+    {
+     "text": "Which device do you use most often to check your appointments?",
+     "line": 6,
+     "section": "Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/screener.md#L6"
+    },
+    {
+     "text": "Do you use a screen reader or screen magnifier?",
+     "line": 7,
+     "section": "Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/screener.md#L7"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Screener",
+    "",
+    "## Questions",
+    "",
+    "- Do you have an appointment scheduled in the next three months?",
+    "- Which device do you use most often to check your appointments?",
+    "- Do you use a screen reader or screen magnifier?",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-03-appointment-reminders-usability/research-findings.md",
+   "folder": "studies/2025-03-appointment-reminders-usability",
+   "file": "research-findings.md",
+   "type": "findings",
+   "title": "Appointment Reminders Research Findings",
+   "frontmatter": {},
+   "tags": [
+    "usability-testing",
+    "remote"
+   ],
+   "lastCommit": "2025-04-18T14:20:00-04:00",
+   "lineCount": 39,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Appointment Reminders Research Findings"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Research Goals"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 12,
+     "level": 2,
+     "text": "Methodology"
+    },
+    {
+     "line": 16,
+     "level": 2,
+     "text": "Key Findings"
+    },
+    {
+     "line": 18,
+     "level": 3,
+     "text": "Most participants wanted reminders by text message first, then email"
+    },
+    {
+     "line": 26,
+     "level": 3,
+     "text": "Participants did not trust a reminder that did not name the clinic"
+    },
+    {
+     "line": 34,
+     "level": 3,
+     "text": "Few participants found the reminder settings without help"
+    }
+   ],
+   "findings": [
+    {
+     "line": 18,
+     "text": "Most participants wanted reminders by text message first, then email",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L18"
+    },
+    {
+     "line": 26,
+     "text": "Participants did not trust a reminder that did not name the clinic",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L26"
+    },
+    {
+     "line": 34,
+     "text": "Few participants found the reminder settings without help",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L34"
+    }
+   ],
+   "questions": [
+    {
+     "text": "How do participants decide whether to turn appointment reminders on or off?",
+     "line": 9,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L9"
+    },
+    {
+     "text": "Where do participants look first to change how they are reminded?",
+     "line": 10,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L10"
+    }
+   ],
+   "quotes": [
+    {
+     "text": "I just want a text the day before. If I have to log in to find out, it is too late.",
+     "line": 22,
+     "section": "Most participants wanted reminders by text message first, then email",
+     "participant": "P2",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“I just want a text the day before. If I have to log in to find out, it is too late.” - P2_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L22"
+    },
+    {
+     "text": "Email is fine as a backup, but I do not look at it until the evening.",
+     "line": 24,
+     "section": "Most participants wanted reminders by text message first, then email",
+     "participant": "P5",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“Email is fine as a backup, but I do not look at it until the evening.” - P5_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L24"
+    },
+    {
+     "text": "If it does not say where, I would think it is a scam.",
+     "line": 30,
+     "section": "Participants did not trust a reminder that did not name the clinic",
+     "participant": "P4",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“If it does not say where, I would think it is a scam.” - P4_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L30"
+    },
+    {
+     "text": "I would want the clinic name and the time, nothing else.",
+     "line": 32,
+     "section": "Participants did not trust a reminder that did not name the clinic",
+     "participant": null,
+     "role": null,
+     "attribution": "none-in-source",
+     "sessionTimestamp": null,
+     "context": "> _“I would want the clinic name and the time, nothing else.”_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L32"
+    },
+    {
+     "text": "I looked under my name. It never occurred to me to look at the appointment itself.",
+     "line": 38,
+     "section": "Few participants found the reminder settings without help",
+     "participant": "P7",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“I looked under my name. It never occurred to me to look at the appointment itself.” - P7_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-03-appointment-reminders-usability/research-findings.md#L38"
+    }
+   ],
+   "lines": [
+    "# Appointment Reminders Research Findings",
+    "",
+    "## Research Goals",
+    "",
+    "- Learn whether participants can find and change their reminder settings.",
+    "",
+    "## Research Questions",
+    "",
+    "- How do participants decide whether to turn appointment reminders on or off?",
+    "- Where do participants look first to change how they are reminded?",
+    "",
+    "## Methodology",
+    "",
+    "Eight moderated remote sessions in March 2025. Two participants used a screen reader.",
+    "",
+    "## Key Findings",
+    "",
+    "### Most participants wanted reminders by text message first, then email",
+    "",
+    "Six of eight participants asked for text messages. Email was seen as something to check later.",
+    "",
+    "> _“I just want a text the day before. If I have to log in to find out, it is too late.” - P2_",
+    "",
+    "> _“Email is fine as a backup, but I do not look at it until the evening.” - P5_",
+    "",
+    "### Participants did not trust a reminder that did not name the clinic",
+    "",
+    "A reminder that only said “you have an appointment” led four participants to ask whether it was real.",
+    "",
+    "> _“If it does not say where, I would think it is a scam.” - P4_",
+    "",
+    "> _“I would want the clinic name and the time, nothing else.”_",
+    "",
+    "### Few participants found the reminder settings without help",
+    "",
+    "Only two participants found the settings page on their own. Most looked under their profile first.",
+    "",
+    "> _“I looked under my name. It never occurred to me to look at the appointment itself.” - P7_",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-06-notification-preferences-discovery/research-plan.md",
+   "folder": "studies/2025-06-notification-preferences-discovery",
+   "file": "research-plan.md",
+   "type": "plan",
+   "title": "Notification Preferences Discovery Plan",
+   "frontmatter": {
+    "product": "Sample Portal Notification Preferences",
+    "team": "Sample Team A"
+   },
+   "tags": [
+    "interviews",
+    "generative"
+   ],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 16,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-plan.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Notification Preferences Discovery Plan"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Background"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 13,
+     "level": 2,
+     "text": "Methodology"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "How do people decide whether to turn notifications on or off?",
+     "line": 9,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-plan.md#L9"
+    },
+    {
+     "text": "Which notification types do people consider essential?",
+     "line": 10,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-plan.md#L10"
+    },
+    {
+     "text": "What makes someone stop trusting a notification?",
+     "line": 11,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-plan.md#L11"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Notification Preferences Discovery Plan",
+    "",
+    "## Background",
+    "",
+    "People receive notifications from several parts of Sample Portal. We do not know which ones they consider essential.",
+    "",
+    "## Research Questions",
+    "",
+    "- How do people decide whether to turn notifications on or off?",
+    "- Which notification types do people consider essential?",
+    "- What makes someone stop trusting a notification?",
+    "",
+    "## Methodology",
+    "",
+    "Eight 60-minute remote interviews.",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-06-notification-preferences-discovery/research-findings.md",
+   "folder": "studies/2025-06-notification-preferences-discovery",
+   "file": "research-findings.md",
+   "type": "findings",
+   "title": "Notification Preferences Discovery Findings",
+   "frontmatter": {},
+   "tags": [
+    "interviews",
+    "generative"
+   ],
+   "lastCommit": "2025-07-30T09:45:00-04:00",
+   "lineCount": 27,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Notification Preferences Discovery Findings"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 8,
+     "level": 2,
+     "text": "Key Findings"
+    },
+    {
+     "line": 10,
+     "level": 3,
+     "text": "Participants treated notification settings as set once and forget"
+    },
+    {
+     "line": 16,
+     "level": 3,
+     "text": "Essential meant anything that changes a date or a payment"
+    },
+    {
+     "line": 24,
+     "level": 3,
+     "text": "Too many alerts led participants to switch everything off"
+    }
+   ],
+   "findings": [
+    {
+     "line": 10,
+     "text": "Participants treated notification settings as set once and forget",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L10"
+    },
+    {
+     "line": 16,
+     "text": "Essential meant anything that changes a date or a payment",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L16"
+    },
+    {
+     "line": 24,
+     "text": "Too many alerts led participants to switch everything off",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L24"
+    }
+   ],
+   "questions": [
+    {
+     "text": "How do people decide whether to turn notifications on or off?",
+     "line": 5,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L5"
+    },
+    {
+     "text": "Which notification types do people consider essential?",
+     "line": 6,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L6"
+    }
+   ],
+   "quotes": [
+    {
+     "text": "I turned something on once. I could not tell you what.",
+     "line": 14,
+     "section": "Participants treated notification settings as set once and forget",
+     "participant": "P1",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“I turned something on once. I could not tell you what.” - P1_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L14"
+    },
+    {
+     "text": "Tell me if something moves or if I owe something. The rest is noise.",
+     "line": 20,
+     "section": "Essential meant anything that changes a date or a payment",
+     "participant": "P3",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“Tell me if something moves or if I owe something. The rest is noise.” - P3_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L20"
+    },
+    {
+     "text": "A new message is not urgent. A cancelled appointment is.",
+     "line": 22,
+     "section": "Essential meant anything that changes a date or a payment",
+     "participant": "P6",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“A new message is not urgent. A cancelled appointment is.” - P6_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L22"
+    },
+    {
+     "text": "After the third one in a day I turned them all off.",
+     "line": 26,
+     "section": "Too many alerts led participants to switch everything off",
+     "participant": "P8",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“After the third one in a day I turned them all off.” - P8_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-06-notification-preferences-discovery/research-findings.md#L26"
+    }
+   ],
+   "lines": [
+    "# Notification Preferences Discovery Findings",
+    "",
+    "## Research Questions",
+    "",
+    "- How do people decide whether to turn notifications on or off?",
+    "- Which notification types do people consider essential?",
+    "",
+    "## Key Findings",
+    "",
+    "### Participants treated notification settings as set once and forget",
+    "",
+    "Most participants could not remember what they had chosen and had not looked at the settings since.",
+    "",
+    "> _“I turned something on once. I could not tell you what.” - P1_",
+    "",
+    "### Essential meant anything that changes a date or a payment",
+    "",
+    "Participants agreed that changes to a date, a time or an amount owed were essential, and the rest could wait.",
+    "",
+    "> _“Tell me if something moves or if I owe something. The rest is noise.” - P3_",
+    "",
+    "> _“A new message is not urgent. A cancelled appointment is.” - P6_",
+    "",
+    "### Too many alerts led participants to switch everything off",
+    "",
+    "> _“After the third one in a day I turned them all off.” - P8_",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md",
+   "folder": "studies/2025-09-mobile-sign-in-help-interviews",
+   "file": "conversation-guide.md",
+   "type": "guide",
+   "title": "Mobile Sign-in Help Conversation Guide",
+   "frontmatter": {},
+   "tags": [
+    "interviews",
+    "remote"
+   ],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 24,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Conversation Guide"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Moderator logistics"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Intro - 5 minutes"
+    },
+    {
+     "line": 11,
+     "level": 2,
+     "text": "Warm-up Questions - 5 minutes"
+    },
+    {
+     "line": 16,
+     "level": 2,
+     "text": "First Task: Sign in - 20 minutes"
+    },
+    {
+     "line": 21,
+     "level": 2,
+     "text": "Thank-you and Closing - 5 minutes"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "How do you usually sign in to apps on your phone?",
+     "line": 13,
+     "section": "Warm-up Questions - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md#L13"
+    },
+    {
+     "text": "Tell me about a time you could not sign in to something.",
+     "line": 14,
+     "section": "Warm-up Questions - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md#L14"
+    },
+    {
+     "text": "Which sign-in option would you choose, and why?",
+     "line": 18,
+     "section": "First Task: Sign in - 20 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md#L18"
+    },
+    {
+     "text": "What would you do if the sign-in failed?",
+     "line": 19,
+     "section": "First Task: Sign in - 20 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md#L19"
+    },
+    {
+     "text": "What would have made signing in easier?",
+     "line": 23,
+     "section": "Thank-you and Closing - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/conversation-guide.md#L23"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Conversation Guide",
+    "",
+    "## Moderator logistics",
+    "",
+    "Ask participants to have their phone ready and the app installed.",
+    "",
+    "## Intro - 5 minutes",
+    "",
+    "Explain the purpose and that the session is recorded with consent.",
+    "",
+    "## Warm-up Questions - 5 minutes",
+    "",
+    "- How do you usually sign in to apps on your phone?",
+    "- Tell me about a time you could not sign in to something.",
+    "",
+    "## First Task: Sign in - 20 minutes",
+    "",
+    "- Which sign-in option would you choose, and why?",
+    "- What would you do if the sign-in failed?",
+    "",
+    "## Thank-you and Closing - 5 minutes",
+    "",
+    "- What would have made signing in easier?",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2025-09-mobile-sign-in-help-interviews/research-findings.md",
+   "folder": "studies/2025-09-mobile-sign-in-help-interviews",
+   "file": "research-findings.md",
+   "type": "findings",
+   "title": "Mobile Sign-in Help Research Findings",
+   "frontmatter": {},
+   "tags": [
+    "interviews",
+    "remote"
+   ],
+   "lastCommit": "2025-11-12T16:05:00-05:00",
+   "lineCount": 23,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Mobile Sign-in Help Research Findings"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 8,
+     "level": 2,
+     "text": "Key Findings"
+    },
+    {
+     "line": 10,
+     "level": 3,
+     "text": "Participants were unsure which sign-in option to choose"
+    },
+    {
+     "line": 18,
+     "level": 3,
+     "text": "Help text was read only after a failed attempt"
+    }
+   ],
+   "findings": [
+    {
+     "line": 10,
+     "text": "Participants were unsure which sign-in option to choose",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L10"
+    },
+    {
+     "line": 18,
+     "text": "Help text was read only after a failed attempt",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L18"
+    }
+   ],
+   "questions": [
+    {
+     "text": "Which sign-in option do participants choose, and why?",
+     "line": 5,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L5"
+    },
+    {
+     "text": "What do participants do when sign-in fails?",
+     "line": 6,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L6"
+    }
+   ],
+   "quotes": [
+    {
+     "text": "I picked the one I remembered from the website. I did not read the others.",
+     "line": 14,
+     "section": "Participants were unsure which sign-in option to choose",
+     "participant": "P2",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“I picked the one I remembered from the website. I did not read the others.” - P2_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L14"
+    },
+    {
+     "text": "There were too many buttons and none of them said which one was mine.",
+     "line": 16,
+     "section": "Participants were unsure which sign-in option to choose",
+     "participant": null,
+     "role": "Caregiver",
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“There were too many buttons and none of them said which one was mine.” - Caregiver_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L16"
+    },
+    {
+     "text": "I only looked at the help when it said it did not work.",
+     "line": 22,
+     "section": "Help text was read only after a failed attempt",
+     "participant": "P5",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“I only looked at the help when it said it did not work.” - P5_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2025-09-mobile-sign-in-help-interviews/research-findings.md#L22"
+    }
+   ],
+   "lines": [
+    "# Mobile Sign-in Help Research Findings",
+    "",
+    "## Research Questions",
+    "",
+    "- Which sign-in option do participants choose, and why?",
+    "- What do participants do when sign-in fails?",
+    "",
+    "## Key Findings",
+    "",
+    "### Participants were unsure which sign-in option to choose",
+    "",
+    "Five of seven participants hesitated at the list of options and chose the one they had used on the website.",
+    "",
+    "> _“I picked the one I remembered from the website. I did not read the others.” - P2_",
+    "",
+    "> _“There were too many buttons and none of them said which one was mine.” - Caregiver_",
+    "",
+    "### Help text was read only after a failed attempt",
+    "",
+    "No participant opened the help text before trying to sign in. Three opened it after a first failure.",
+    "",
+    "> _“I only looked at the help when it said it did not work.” - P5_",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2026-01-document-upload-usability/research-plan.md",
+   "folder": "studies/2026-01-document-upload-usability",
+   "file": "research-plan.md",
+   "type": "plan",
+   "title": "Document Upload Research Plan",
+   "frontmatter": {
+    "product": "Sample Portal Document Upload",
+    "team": "Sample Team B"
+   },
+   "tags": [
+    "usability-testing",
+    "remote"
+   ],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 16,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-plan.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Document Upload Research Plan"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Background"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 13,
+     "level": 2,
+     "text": "Methodology"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "What do participants expect to happen after they upload a document?",
+     "line": 9,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-plan.md#L9"
+    },
+    {
+     "text": "How do participants know an upload worked?",
+     "line": 10,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-plan.md#L10"
+    },
+    {
+     "text": "How do participants decide whether to turn confirmation emails on or off?",
+     "line": 11,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-plan.md#L11"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Document Upload Research Plan",
+    "",
+    "## Background",
+    "",
+    "People upload documents to support a request, then call to ask whether the upload worked. We are testing a new confirmation step.",
+    "",
+    "## Research Questions",
+    "",
+    "- What do participants expect to happen after they upload a document?",
+    "- How do participants know an upload worked?",
+    "- How do participants decide whether to turn confirmation emails on or off?",
+    "",
+    "## Methodology",
+    "",
+    "Ten moderated remote usability sessions.",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2026-01-document-upload-usability/conversation-guide.md",
+   "folder": "studies/2026-01-document-upload-usability",
+   "file": "conversation-guide.md",
+   "type": "guide",
+   "title": "Document Upload Conversation Guide",
+   "frontmatter": {},
+   "tags": [
+    "usability-testing"
+   ],
+   "lastCommit": "2026-03-02T10:00:00-05:00",
+   "lineCount": 19,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/conversation-guide.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Conversation Guide"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Intro - 5 minutes"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Warm-up Questions - 5 minutes"
+    },
+    {
+     "line": 11,
+     "level": 2,
+     "text": "First Task: Upload a document - 25 minutes"
+    },
+    {
+     "line": 16,
+     "level": 2,
+     "text": "Thank-you and Closing - 5 minutes"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "Tell me about the last time you sent a document to an organization online.",
+     "line": 9,
+     "section": "Warm-up Questions - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/conversation-guide.md#L9"
+    },
+    {
+     "text": "What do you expect to happen after you select the file?",
+     "line": 13,
+     "section": "First Task: Upload a document - 25 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/conversation-guide.md#L13"
+    },
+    {
+     "text": "How would you know the upload worked?",
+     "line": 14,
+     "section": "First Task: Upload a document - 25 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/conversation-guide.md#L14"
+    },
+    {
+     "text": "What would you change about this page?",
+     "line": 18,
+     "section": "Thank-you and Closing - 5 minutes",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/conversation-guide.md#L18"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Conversation Guide",
+    "",
+    "## Intro - 5 minutes",
+    "",
+    "Explain the purpose, consent and recording.",
+    "",
+    "## Warm-up Questions - 5 minutes",
+    "",
+    "- Tell me about the last time you sent a document to an organization online.",
+    "",
+    "## First Task: Upload a document - 25 minutes",
+    "",
+    "- What do you expect to happen after you select the file?",
+    "- How would you know the upload worked?",
+    "",
+    "## Thank-you and Closing - 5 minutes",
+    "",
+    "- What would you change about this page?",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2026-01-document-upload-usability/research-findings.md",
+   "folder": "studies/2026-01-document-upload-usability",
+   "file": "research-findings.md",
+   "type": "findings",
+   "title": "Document Upload Research Findings",
+   "frontmatter": {},
+   "tags": [
+    "usability-testing",
+    "remote"
+   ],
+   "lastCommit": "2026-02-26T11:30:00-05:00",
+   "lineCount": 25,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Document Upload Research Findings"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 8,
+     "level": 2,
+     "text": "Key Findings"
+    },
+    {
+     "line": 10,
+     "level": 3,
+     "text": "Participants expected an immediate confirmation with the file name"
+    },
+    {
+     "line": 16,
+     "level": 3,
+     "text": "A progress bar without a result made participants unsure the upload finished"
+    },
+    {
+     "line": 22,
+     "level": 3,
+     "text": "Confirmation emails were wanted, but not for every upload"
+    }
+   ],
+   "findings": [
+    {
+     "line": 10,
+     "text": "Participants expected an immediate confirmation with the file name",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L10"
+    },
+    {
+     "line": 16,
+     "text": "A progress bar without a result made participants unsure the upload finished",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L16"
+    },
+    {
+     "line": 22,
+     "text": "Confirmation emails were wanted, but not for every upload",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L22"
+    }
+   ],
+   "questions": [
+    {
+     "text": "What do participants expect to happen after they upload a file?",
+     "line": 5,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L5"
+    },
+    {
+     "text": "How do participants know an upload worked?",
+     "line": 6,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L6"
+    }
+   ],
+   "quotes": [
+    {
+     "text": "Show me the name of what I sent. Then I know it is the right one.",
+     "line": 14,
+     "section": "Participants expected an immediate confirmation with the file name",
+     "participant": "P1",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“Show me the name of what I sent. Then I know it is the right one.” - P1_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L14"
+    },
+    {
+     "text": "It filled up and then it just went away. Did it work?",
+     "line": 18,
+     "section": "A progress bar without a result made participants unsure the upload finished",
+     "participant": "P4",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“It filled up and then it just went away. Did it work?” - P4_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L18"
+    },
+    {
+     "text": "I would have taken a screenshot, honestly.",
+     "line": 20,
+     "section": "A progress bar without a result made participants unsure the upload finished",
+     "participant": "P9",
+     "role": null,
+     "attribution": "explicit",
+     "sessionTimestamp": null,
+     "context": "> _“I would have taken a screenshot, honestly.” - P9_",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-01-document-upload-usability/research-findings.md#L20"
+    }
+   ],
+   "lines": [
+    "# Document Upload Research Findings",
+    "",
+    "## Research Questions",
+    "",
+    "- What do participants expect to happen after they upload a file?",
+    "- How do participants know an upload worked?",
+    "",
+    "## Key Findings",
+    "",
+    "### Participants expected an immediate confirmation with the file name",
+    "",
+    "Nine of ten participants said a confirmation that repeated the file name would be enough to trust the upload.",
+    "",
+    "> _“Show me the name of what I sent. Then I know it is the right one.” - P1_",
+    "",
+    "### A progress bar without a result made participants unsure the upload finished",
+    "",
+    "> _“It filled up and then it just went away. Did it work?” - P4_",
+    "",
+    "> _“I would have taken a screenshot, honestly.” - P9_",
+    "",
+    "### Confirmation emails were wanted, but not for every upload",
+    "",
+    "Participants wanted an email for the first upload and a quieter option after that.",
+    ""
+   ]
+  },
+  {
+   "path": "studies/2026-04-caregiver-account-linking-discovery/research-plan.md",
+   "folder": "studies/2026-04-caregiver-account-linking-discovery",
+   "file": "research-plan.md",
+   "type": "plan",
+   "title": "Caregiver Account Linking Discovery Plan",
+   "frontmatter": {
+    "product": "Sample Portal Caregiver Accounts",
+    "team": "Sample Team C"
+   },
+   "tags": [
+    "interviews",
+    "generative"
+   ],
+   "lastCommit": "2026-04-20T13:10:00-04:00",
+   "lineCount": 16,
+   "link": "https://example.com/sample-research-repo/blob/main/studies/2026-04-caregiver-account-linking-discovery/research-plan.md",
+   "headings": [
+    {
+     "line": 1,
+     "level": 1,
+     "text": "Caregiver Account Linking Discovery Plan"
+    },
+    {
+     "line": 3,
+     "level": 2,
+     "text": "Background"
+    },
+    {
+     "line": 7,
+     "level": 2,
+     "text": "Research Questions"
+    },
+    {
+     "line": 13,
+     "level": 2,
+     "text": "Methodology"
+    }
+   ],
+   "findings": [],
+   "questions": [
+    {
+     "text": "How do caregivers expect to be connected to the person they support?",
+     "line": 9,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-04-caregiver-account-linking-discovery/research-plan.md#L9"
+    },
+    {
+     "text": "What information would caregivers be comfortable sharing to link accounts?",
+     "line": 10,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-04-caregiver-account-linking-discovery/research-plan.md#L10"
+    },
+    {
+     "text": "How do caregivers decide whether to turn notifications on or off for the person they support?",
+     "line": 11,
+     "section": "Research Questions",
+     "link": "https://example.com/sample-research-repo/blob/main/studies/2026-04-caregiver-account-linking-discovery/research-plan.md#L11"
+    }
+   ],
+   "quotes": [],
+   "lines": [
+    "# Caregiver Account Linking Discovery Plan",
+    "",
+    "## Background",
+    "",
+    "Caregivers manage appointments and documents for someone else. Today they share a login, which we want to stop.",
+    "",
+    "## Research Questions",
+    "",
+    "- How do caregivers expect to be connected to the person they support?",
+    "- What information would caregivers be comfortable sharing to link accounts?",
+    "- How do caregivers decide whether to turn notifications on or off for the person they support?",
+    "",
+    "## Methodology",
+    "",
+    "Twelve 60-minute remote interviews with caregivers.",
+    ""
+   ]
+  }
+ ],
+ "folderToBoard": {
+  "studies/2025-03-appointment-reminders-usability": [
+   9001
+  ],
+  "studies/2025-06-notification-preferences-discovery": [
+   9002
+  ],
+  "studies/2025-09-mobile-sign-in-help-interviews": [
+   9003
+  ],
+  "studies/2026-01-document-upload-usability": [
+   9004
+  ],
+  "studies/2026-04-caregiver-account-linking-discovery": [
+   9005
+  ]
+ },
+ "structuredFindings": [
+  {
+   "id": "F001",
+   "summary": "People who set reminder preferences once rarely return to change them, so defaults matter more than the settings page",
+   "sourceStudy": "2025-03 Sample Portal Appointment Reminders Usability Testing",
+   "method": [
+    "usability_testing"
+   ],
+   "participants": 8,
+   "createdAt": "2025-04-01",
+   "labels": {
+    "user_groups": [
+     "all_users"
+    ],
+    "research_themes": [
+     "notification_preferences"
+    ],
+    "finding_types": [
+     "usability_issue"
+    ],
+    "severity_levels": [
+     "medium"
+    ],
+    "device_platforms": [
+     "desktop",
+     "mobile_ios"
+    ],
+    "journey_stages": [
+     "ongoing_management"
+    ]
+   },
+   "file": "data/findings.yml",
+   "line": 1,
+   "link": "https://example.com/sample-research-repo/blob/main/data/findings.yml#L1"
+  },
+  {
+   "id": "F002",
+   "summary": "A reminder that does not name the clinic is read as possible fraud",
+   "sourceStudy": "2025-03 Sample Portal Appointment Reminders Usability Testing",
+   "method": [
+    "usability_testing"
+   ],
+   "participants": 8,
+   "createdAt": "2025-04-01",
+   "labels": {
+    "user_groups": [
+     "all_users"
+    ],
+    "research_themes": [
+     "trust"
+    ],
+    "finding_types": [
+     "trust_issue"
+    ],
+    "severity_levels": [
+     "high"
+    ]
+   },
+   "file": "data/findings.yml",
+   "line": 22,
+   "link": "https://example.com/sample-research-repo/blob/main/data/findings.yml#L22"
+  },
+  {
+   "id": "F003",
+   "summary": "An upload that ends without a visible result leaves people unsure whether to try again",
+   "sourceStudy": "2026-01 Sample Portal Document Upload Usability Testing",
+   "method": [
+    "usability_testing"
+   ],
+   "participants": 10,
+   "createdAt": "2026-03-01",
+   "labels": {
+    "user_groups": [
+     "all_users"
+    ],
+    "research_themes": [
+     "task_completion"
+    ],
+    "finding_types": [
+     "usability_issue"
+    ],
+    "severity_levels": [
+     "high"
+    ]
+   },
+   "file": "data/findings.yml",
+   "line": 43,
+   "link": "https://example.com/sample-research-repo/blob/main/data/findings.yml#L43"
+  },
+  {
+   "id": "F004",
+   "summary": "People read help text only after a failure, so the first attempt has to work without it",
+   "sourceStudy": "2025-09 Sample Mobile App Sign-in Help Interviews",
+   "method": [
+    "interviews"
+   ],
+   "participants": 7,
+   "createdAt": "2025-11-15",
+   "labels": {
+    "user_groups": [
+     "mobile_users"
+    ],
+    "research_themes": [
+     "sign_in_authentication"
+    ],
+    "finding_types": [
+     "usability_issue"
+    ],
+    "severity_levels": [
+     "medium"
+    ]
+   },
+   "file": "data/findings.yml",
+   "line": 64,
+   "link": "https://example.com/sample-research-repo/blob/main/data/findings.yml#L64"
+  }
+ ],
+ "notIndexed": {
+  "png": 12,
+  "xlsx": 1
+ },
+ "limits": [
+  "SAMPLE DATA: every study, participant and quote in this file is fictional. It exists so the app runs without access to a real research repository.",
+  "Questions and quotes are extracted from single lines only; quotes split across lines are not captured.",
+  "Session timestamps are captured only when written beside a quote in the source; most sources do not record them.",
+  "Board studies without a local folder have summary and key findings only, not the questions asked."
+ ]
+}

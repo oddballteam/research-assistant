@@ -1,0 +1,169 @@
+{
+ "source": "sample labels (fictional)",
+ "labels": [
+  {
+   "n": "PRDT: Sample Portal Appointment Reminders",
+   "g": "PRDT",
+   "d": "match: Appointment Reminders",
+   "p": [
+    "Appointment Reminders"
+   ]
+  },
+  {
+   "n": "PRDT: Sample Portal Document Upload",
+   "g": "PRDT",
+   "d": "match: Document Upload",
+   "p": [
+    "Document Upload"
+   ]
+  },
+  {
+   "n": "PRDT: Sample Portal Notification Preferences",
+   "g": "PRDT",
+   "d": "match: Notification Preferences",
+   "p": [
+    "Notification Preferences"
+   ]
+  },
+  {
+   "n": "PRDT: Sample Mobile App",
+   "g": "PRDT",
+   "d": "match: Sample Mobile App",
+   "p": [
+    "Sample Mobile App"
+   ]
+  },
+  {
+   "n": "BNFT: Sample Benefit",
+   "g": "BNFT",
+   "d": "match: Sample Benefit",
+   "p": [
+    "Sample Benefit"
+   ]
+  },
+  {
+   "n": "RESRCH: Usability Testing",
+   "g": "RESRCH",
+   "d": "match: Usability Testing",
+   "p": [
+    "Usability Testing"
+   ]
+  },
+  {
+   "n": "RESRCH: Interviews",
+   "g": "RESRCH",
+   "d": "match: Interviews",
+   "p": [
+    "Interviews"
+   ]
+  },
+  {
+   "n": "RESRCH: Discovery",
+   "g": "RESRCH",
+   "d": "match: Discovery, Generative",
+   "p": [
+    "Discovery",
+    "Generative"
+   ]
+  },
+  {
+   "n": "RESRCH: Accessibility",
+   "g": "RESRCH",
+   "d": "match: Accessibility",
+   "p": [
+    "Accessibility"
+   ]
+  },
+  {
+   "n": "AUD: Caregivers",
+   "g": "AUD",
+   "d": "match: Caregivers",
+   "p": [
+    "Caregivers"
+   ]
+  },
+  {
+   "n": "AUD: Mobile users",
+   "g": "AUD",
+   "d": "match: Mobile users",
+   "p": [
+    "Mobile users"
+   ]
+  },
+  {
+   "n": "DSC: Alert Boxes",
+   "g": "DSC",
+   "d": "match: Alert Boxes",
+   "p": [
+    "Alert Boxes"
+   ]
+  },
+  {
+   "n": "DSC: Checkbox",
+   "g": "DSC",
+   "d": "match: Checkbox",
+   "p": [
+    "Checkbox"
+   ]
+  },
+  {
+   "n": "key-findings-added",
+   "g": "Other",
+   "d": "match: key-findings-added, findings added",
+   "p": [
+    "key-findings-added",
+    "findings added"
+   ]
+  },
+  {
+   "n": "no-recommendations-exploratory",
+   "g": "Other",
+   "d": "match: no-recommendations-exploratory, Discovery/exploratory research no recommendations",
+   "p": [
+    "no-recommendations-exploratory",
+    "Discovery/exploratory research no recommendations"
+   ]
+  },
+  {
+   "n": "no-recommendations-validated",
+   "g": "Other",
+   "d": "match: no-recommendations-validated, Validated, no recommendations",
+   "p": [
+    "no-recommendations-validated",
+    "Validated, no recommendations"
+   ]
+  },
+  {
+   "n": "no-recommendations-uat",
+   "g": "Other",
+   "d": "match: no-recommendations-uat, UAT, no recommendations",
+   "p": [
+    "no-recommendations-uat",
+    "UAT, no recommendations"
+   ]
+  },
+  {
+   "n": "further-research-needed",
+   "g": "Other",
+   "d": "match: further-research-needed, Further research needed",
+   "p": [
+    "further-research-needed",
+    "Further research needed"
+   ]
+  },
+  {
+   "n": "recommendations-tracked-externally",
+   "g": "Other",
+   "d": "match: recommendations-tracked-externally, Recommendations tracked externally",
+   "p": [
+    "recommendations-tracked-externally",
+    "Recommendations tracked externally"
+   ]
+  }
+ ],
+ "teams": [
+  "Sample Team A",
+  "Sample Team B",
+  "Sample Team C"
+ ]
+}

@@ -1,0 +1,585 @@
+{
+ "source": {
+  "file": "sample/taxonomy-data.json (fictional)",
+  "generatedAt": "2026-09-25T14:00:00.000Z",
+  "reports": 6,
+  "findings": 14,
+  "repo": "sample-team-repo (example.com)"
+ },
+ "labels": {
+  "ty": [
+   "accessibility_barrier",
+   "content_issue",
+   "emotional_response",
+   "mental_model_mismatch",
+   "navigation_issue",
+   "positive_finding",
+   "process_issue",
+   "trust_issue",
+   "unmet_need",
+   "usability_issue"
+  ],
+  "pa": [
+   "appointments",
+   "benefits_claims",
+   "caregiver",
+   "debt_financial",
+   "education",
+   "facilities",
+   "forms",
+   "health_care",
+   "housing",
+   "identity_auth",
+   "memorial_burial",
+   "mobile_app",
+   "notifications",
+   "records_documents",
+   "representative",
+   "search"
+  ],
+  "ug": [
+   "assistive_tech_users",
+   "caregivers",
+   "cognitive_disability",
+   "dependents",
+   "homeless_veterans",
+   "lgbtq_plus",
+   "low_digital_literacy",
+   "minority_veterans",
+   "mobile_users",
+   "older_veterans",
+   "rural_veterans",
+   "service_members",
+   "veterans"
+  ],
+  "th": [
+   "content_comprehension",
+   "cross_channel",
+   "data_privacy",
+   "error_handling",
+   "form_completion",
+   "information_seeking",
+   "mobile_experience",
+   "navigation_wayfinding",
+   "notification_communication",
+   "personalization",
+   "sign_in_authentication",
+   "status_tracking",
+   "task_completion"
+  ],
+  "js": [
+   "applying_for_benefits",
+   "discovering_benefits",
+   "managing_benefits",
+   "resolving_issues",
+   "transitioning"
+  ],
+  "sv": [
+   "critical",
+   "high",
+   "low",
+   "medium"
+  ],
+  "es": [
+   "anxious",
+   "confused",
+   "distrustful",
+   "empowered",
+   "frustrated",
+   "overwhelmed",
+   "satisfied"
+  ]
+ },
+ "reports": [
+  {
+   "p": "sample-products/appointments/2025-03-reminders/research-findings.md",
+   "u": "https://example.com/sample-research-repo/blob/main/sample-products/appointments/2025-03-reminders/research-findings.md",
+   "t": "[Sample Portal Appointment Reminders] Research Findings",
+   "d": "2025-04-01",
+   "m": [
+    "Usability testing"
+   ],
+   "n": 8,
+   "prod": "Sample Portal Appointment Reminders",
+   "team": "Sample Team A",
+   "at": "2026-09-25",
+   "bn": [
+    9001
+   ],
+   "f": [
+    {
+     "i": 1,
+     "x": "Most participants wanted reminders by text message first, then email",
+     "l": {
+      "ty": [
+       "unmet_need",
+       0.61
+      ],
+      "pa": [
+       "notifications",
+       0.88
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "notification_communication",
+       0.9
+      ],
+      "js": [
+       "managing_benefits",
+       0.4
+      ]
+     }
+    },
+    {
+     "i": 2,
+     "x": "Participants did not trust a reminder that did not name the clinic",
+     "l": {
+      "ty": [
+       "trust_issue",
+       0.83
+      ],
+      "pa": [
+       "appointments",
+       0.9
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "data_privacy",
+       0.35
+      ],
+      "sv": [
+       "high",
+       0.55
+      ]
+     }
+    },
+    {
+     "i": 3,
+     "x": "Few participants found the reminder settings without help",
+     "l": {
+      "ty": [
+       "navigation_issue",
+       0.78
+      ],
+      "pa": [
+       "notifications",
+       0.6
+      ],
+      "ug": [
+       "assistive_tech_users",
+       0.31
+      ],
+      "th": [
+       "navigation_wayfinding",
+       0.92
+      ]
+     }
+    }
+   ],
+   "q": [
+    {
+     "x": "“I just want a text the day before. If I have to log in to find out, it is too late.”",
+     "l": 26,
+     "p": "P2"
+    },
+    {
+     "x": "“If it does not say where, I would think it is a scam.”",
+     "l": 31,
+     "p": "P4"
+    }
+   ]
+  },
+  {
+   "p": "sample-products/notifications/2025-06-preferences/research-findings.md",
+   "u": "https://example.com/sample-research-repo/blob/main/sample-products/notifications/2025-06-preferences/research-findings.md",
+   "t": "[Sample Portal Notification Preferences] Discovery Findings",
+   "d": "2025-07-30",
+   "m": [
+    "Semi-structured interview"
+   ],
+   "n": 8,
+   "prod": "Sample Portal Notification Preferences",
+   "team": "Sample Team A",
+   "at": "2026-09-25",
+   "bn": [
+    9002
+   ],
+   "f": [
+    {
+     "i": 1,
+     "x": "Participants treated notification settings as set once and forget",
+     "l": {
+      "ty": [
+       "mental_model_mismatch",
+       0.52
+      ],
+      "pa": [
+       "notifications",
+       0.95
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "personalization",
+       0.66
+      ]
+     }
+    },
+    {
+     "i": 2,
+     "x": "Essential meant anything that changes a date or a payment",
+     "l": {
+      "ty": [
+       "process_issue",
+       0.3
+      ],
+      "pa": [
+       "notifications",
+       0.9
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "notification_communication",
+       0.8
+      ],
+      "js": [
+       "managing_benefits",
+       0.45
+      ]
+     }
+    },
+    {
+     "i": 3,
+     "x": "Too many alerts led participants to switch everything off",
+     "l": {
+      "ty": [
+       "emotional_response",
+       0.58
+      ],
+      "pa": [
+       "notifications",
+       0.9
+      ],
+      "ug": [
+       "older_veterans",
+       0.28
+      ],
+      "th": [
+       "notification_communication",
+       0.85
+      ],
+      "sv": [
+       "medium",
+       0.5
+      ]
+     }
+    }
+   ],
+   "q": [
+    {
+     "x": "“Tell me if something moves or if I owe something. The rest is noise.”",
+     "l": 24,
+     "p": "P3"
+    }
+   ]
+  },
+  {
+   "p": "sample-products/mobile/2025-09-sign-in-help/research-findings.md",
+   "u": "https://example.com/sample-research-repo/blob/main/sample-products/mobile/2025-09-sign-in-help/research-findings.md",
+   "t": "[Sample Mobile App] Sign-in Help Research Findings",
+   "d": "2025-11-12",
+   "m": [
+    "Semi-structured interview"
+   ],
+   "n": 7,
+   "prod": "Sample Mobile App",
+   "team": "Sample Team C",
+   "at": "2026-09-25",
+   "bn": [
+    9003
+   ],
+   "f": [
+    {
+     "i": 1,
+     "x": "Participants were unsure which sign-in option to choose",
+     "l": {
+      "ty": [
+       "mental_model_mismatch",
+       0.7
+      ],
+      "pa": [
+       "identity_auth",
+       0.85
+      ],
+      "ug": [
+       "mobile_users",
+       0.6
+      ],
+      "th": [
+       "sign_in_authentication",
+       0.97
+      ]
+     }
+    },
+    {
+     "i": 2,
+     "x": "Help text was read only after a failed attempt",
+     "l": {
+      "ty": [
+       "content_issue",
+       0.64
+      ],
+      "pa": [
+       "identity_auth",
+       0.8
+      ],
+      "ug": [
+       "mobile_users",
+       0.6
+      ],
+      "th": [
+       "error_handling",
+       0.7
+      ],
+      "js": [
+       "resolving_issues",
+       0.33
+      ]
+     }
+    }
+   ],
+   "q": [
+    {
+     "x": "“I only looked at the help when it said it did not work.”",
+     "l": 22,
+     "p": "P5"
+    }
+   ]
+  },
+  {
+   "p": "sample-products/documents/2026-01-upload/research-findings.md",
+   "u": "https://example.com/sample-research-repo/blob/main/sample-products/documents/2026-01-upload/research-findings.md",
+   "t": "[Sample Portal Document Upload] Research Findings",
+   "d": "2026-02-26",
+   "m": [
+    "Usability testing"
+   ],
+   "n": 10,
+   "prod": "Sample Portal Document Upload",
+   "team": "Sample Team B",
+   "at": "2026-09-25",
+   "bn": [
+    9004
+   ],
+   "f": [
+    {
+     "i": 1,
+     "x": "Participants expected an immediate confirmation with the file name",
+     "l": {
+      "ty": [
+       "unmet_need",
+       0.74
+      ],
+      "pa": [
+       "records_documents",
+       0.92
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "task_completion",
+       0.8
+      ],
+      "js": [
+       "resolving_issues",
+       0.41
+      ]
+     }
+    },
+    {
+     "i": 2,
+     "x": "A progress bar without a result made participants unsure the upload finished",
+     "l": {
+      "ty": [
+       "usability_issue",
+       0.88
+      ],
+      "pa": [
+       "records_documents",
+       0.9
+      ],
+      "ug": [
+       "low_digital_literacy",
+       0.25
+      ],
+      "th": [
+       "status_tracking",
+       0.76
+      ],
+      "sv": [
+       "high",
+       0.6
+      ]
+     }
+    },
+    {
+     "i": 3,
+     "x": "Confirmation emails were wanted, but not for every upload",
+     "l": {
+      "ty": [
+       "process_issue",
+       0.4
+      ],
+      "pa": [
+       "notifications",
+       0.55
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "notification_communication",
+       0.7
+      ]
+     }
+    }
+   ],
+   "q": [
+    {
+     "x": "“Show me the name of what I sent. Then I know it is the right one.”",
+     "l": 24,
+     "p": "P1"
+    },
+    {
+     "x": "“It filled up and then it just went away. Did it work?”",
+     "l": 29,
+     "p": "P4"
+    }
+   ]
+  },
+  {
+   "p": "sample-products/search/2024-05-search-redesign/research-findings.md",
+   "u": "https://example.com/sample-research-repo/blob/main/sample-products/search/2024-05-search-redesign/research-findings.md",
+   "t": "[Sample Portal Search] Redesign Findings",
+   "d": "2024-06-14",
+   "m": [
+    "Usability testing"
+   ],
+   "n": 9,
+   "prod": "Sample Portal Search",
+   "team": "Sample Team B",
+   "at": "2026-09-25",
+   "bn": [],
+   "f": [
+    {
+     "i": 1,
+     "x": "Participants typed whole questions into search and expected an answer, not a list of pages",
+     "l": {
+      "ty": [
+       "mental_model_mismatch",
+       0.72
+      ],
+      "pa": [
+       "search",
+       0.97
+      ],
+      "ug": [
+       "older_veterans",
+       0.33
+      ],
+      "th": [
+       "information_seeking",
+       0.9
+      ]
+     }
+    },
+    {
+     "i": 2,
+     "x": "Results that repeated the same page title in different sections looked like duplicates",
+     "l": {
+      "ty": [
+       "content_issue",
+       0.6
+      ],
+      "pa": [
+       "search",
+       0.93
+      ],
+      "ug": [
+       "veterans",
+       0.7
+      ],
+      "th": [
+       "content_comprehension",
+       0.62
+      ]
+     }
+    }
+   ],
+   "q": [
+    {
+     "x": "“I typed what I would ask a person. It gave me a list.”",
+     "l": 18,
+     "p": "P6"
+    }
+   ]
+  },
+  {
+   "p": "sample-products/mobile/2024-11-onboarding/research-findings.md",
+   "u": "https://example.com/sample-research-repo/blob/main/sample-products/mobile/2024-11-onboarding/research-findings.md",
+   "t": "[Sample Mobile App] Onboarding Research Findings",
+   "d": "2024-12-09",
+   "m": [
+    "Semi-structured interview"
+   ],
+   "n": 6,
+   "prod": "Sample Mobile App",
+   "team": "Sample Team C",
+   "at": "2026-09-25",
+   "bn": [],
+   "f": [
+    {
+     "i": 1,
+     "x": "Participants skipped the onboarding screens and returned to them only when stuck",
+     "l": {
+      "ty": [
+       "process_issue",
+       0.5
+      ],
+      "pa": [
+       "mobile_app",
+       0.9
+      ],
+      "ug": [
+       "mobile_users",
+       0.6
+      ],
+      "th": [
+       "mobile_experience",
+       0.8
+      ],
+      "js": [
+       "discovering_benefits",
+       0.36
+      ]
+     }
+    }
+   ],
+   "q": []
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "research-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "VA Research Assistant: a static app that searches an index of past research and drafts research plans, conversation guides, findings and reports. No server code, no API key.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node --test",
+    "split": "node scripts/split-artifact.mjs",
+    "sample": "node scripts/make-sample-data.mjs"
+  }
+}
